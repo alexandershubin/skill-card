@@ -1,0 +1,59 @@
+main.main
+	section.info.border
+		div.container.container__back
+			div.info__wrapper
+				img.info__avatar(src=`${baseDir}images/sprites/png/avatar.png` alt="avatar")
+				form.form
+					label.form__label(for="name")
+						input.form__input(type="text" id="name" placeholder="Александр")
+					label.form__label(for="burn")
+						input.form__input(type="text" id="burn" placeholder="08.07.1990")
+					label.form__label(for="city")
+						input.form__input(type="text" id="city" placeholder="Санкт-Петербург")
+					label.form__label(for="contact")
+						input.form__input(type="text" id="contact" placeholder="8 (963) 349-78-80")
+					+lazyPicture({
+						src: `${baseDir}images/sprites/png/print.png`,
+						alt: 'print',
+					}).form__print
+	section.skills.border
+		div.container.container__back
+			div.skills__wrapper
+				h2.title-h2.title-h2__skills Навыки
+				div.skills-list
+					input.skills__input(type="checkbox" id="html")
+					label.skills__label(for="html") HTML5
+					input.skills__input(type="checkbox" id="sass")
+					label.skills__label(for="sass") sass
+					input.skills__input(type="checkbox" id="js")
+					label.skills__label(for="js") vanillajs
+					input.skills__input(type="checkbox" id="git")
+					label.skills__label(for="git") git
+					input.skills__input(type="checkbox" id="css")
+					label.skills__label(for="css") css3
+					input.skills__input(type="checkbox" id="less")
+					label.skills__label(for="less") less
+					input.skills__input(type="checkbox" id="angular")
+					label.skills__label(for="angular") angular
+					input.skills__input(type="checkbox" id="foundation")
+					label.skills__label(for="foundation") foundation
+					input.skills__input(type="checkbox" id="bem")
+					label.skills__label(for="bem") БЭМ
+					input.skills__input(type="checkbox" id="gulp")
+					label.skills__label(for="gulp") gulp
+					input.skills__input(type="checkbox" id="jquery")
+					label.skills__label(for="jquery") jquery
+					input.skills__input(type="checkbox" id="bootstrap")
+					label.skills__label(for="bootstrap") bootstrap
+	section.level
+		div.container.container__back
+			div.level__wrapper
+				div.level__arrow
+					img.level__orange(src=`${baseDir}images/sprites/png/orange.png` alt="img")
+					img.level__green(src=`${baseDir}images/sprites/png/green.png` alt="img")
+					img.level__blue(src=`${baseDir}images/sprites/png/blue.png` alt="img")
+					svg.level__svg(xmlns="http://www.w3.org/2000/svg" width="55.375" height="39" viewBox="0 0 55.375 39")
+						path.cls-1(d="M327.657,750.858a9.154,9.154,0,0,1-12.791,2.581L273.835,716,325.146,737.9h0a9.428,9.428,0,0,1,2.511,12.954h0Z" transform="translate(-273.844 -716)")
+				div.level__percent
+					h2.title-h2.title-h2__level Мой уровень владения <br> Java Script
+					span.level__count 0
